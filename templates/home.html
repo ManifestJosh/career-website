@@ -22,7 +22,13 @@
      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet massa vitae tortor condimentum lacinia quis. Quisque egestas diam in arcu cursus euismod quis viverra. Elit duis tristique sollicitudin nibh. Dui faucibus in ornare quam viverra orci sagittis. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Quam elementum pulvinar etiam non quam lacus. Ut diam quam nulla porttitor massa id neque. Quisque id diam vel quam elementum. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Quis auctor elit sed vulputate mi. Habitasse platea dictumst vestibulum rhoncus. Sit amet consectetur adipiscing elit ut aliquam. Lectus vestibulum mattis ullamcorper velit. Vitae justo eget magna fermentum iaculis. Purus in mollis nunc sed id semper.
       </p> 
       <h2 class='text-center'>Open Position</h2>
-      <p>Show the Jobs here</p>
+      <p>
+        <div>
+          {% for job in jobs %}
+            {% include 'jobitem.html' %}
+          {% endfor %}
+        </div>
+      </p>
       <div class='text-center'>
       <button class='btn btn-primary btn-lg' >Contact Us</button>
         <p class='mt-4'>Copyright 2022, Careersinfo</p>
